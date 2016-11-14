@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/buttom_bor"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:layout_height="50dp">
+    <LinearLayout
+
+        android:id="@+id/b_line_hom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:padding="2dp"
+            android:id="@+id/b_id_hom"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="#0000"
+            android:src="@mipmap/home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/b_tv_hom"
+            android:textColor="@color/blue"
+            android:text="首页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/b_line_com"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/b_id_com"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="#0000"
+            android:src="@mipmap/community0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/b_tv_com"
+            android:text="社区"
+            android:textColor="@color/z_gary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/b_line_per"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/b_id_per"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:background="#0000"
+            android:src="@mipmap/person0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/b_tv_per"
+            android:text="我的"
+            android:textColor="@color/z_gary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

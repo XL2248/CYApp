@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/login_bg"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:text="注 册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/login_bor_1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/login_bor_2"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@mipmap/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/reg_et_name"
+                    android:textCursorDrawable="@color/gary"
+                    android:layout_weight="1"
+                    android:hint="昵称"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@mipmap/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/reg_et_password"
+                    android:layout_weight="1"
+                    android:hint="密码"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/reg_bt"
+            android:background="@drawable/login_bor_lb"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginLeft="28dp"
+            android:textColor="@color/white"
+            android:text="注册"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
