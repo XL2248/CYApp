@@ -4,4 +4,9 @@
         <attr name="border_width" format="dimension"/>
         <attr name="border_color" format="color" />
     </declare-styleable>
+    <declare-styleable name="CollapsedTextView">
+        <attr name="trimLines" format="integer"/>
+        <attr name="expandedText" format="string"/>
+        <attr name="collapsedText" format="string"/>
+    </declare-styleable>
 </resources>

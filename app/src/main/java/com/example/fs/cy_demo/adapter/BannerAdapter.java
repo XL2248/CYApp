@@ -1,4 +1,4 @@
-package com.example.fs.cy_demo;
+package com.example.fs.cy_demo.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

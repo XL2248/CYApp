@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".MainAct"/>
         <activity android:name=".LoginAct"/>
+        <activity android:name=".RegisterAct"/>
     </application>
 
 </manifest>

@@ -88,6 +88,10 @@
 
     </LinearLayout>
     <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
         android:background="@color/white"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -98,16 +102,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="6dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/per_k1_g"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="30dp" />
             <TextView
                 android:textSize="12sp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/black"
                 android:text="待付款"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -118,16 +124,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="6dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/per_k2_g"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="30dp" />
             <TextView
                 android:textSize="12sp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/black"
                 android:text="浏览足迹"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -138,16 +146,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="6dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/per_k3_g"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="30dp" />
             <TextView
                 android:textSize="12sp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/black"
                 android:text="我的订单"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -158,16 +168,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:padding="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="6dp"
                 android:layout_gravity="center_horizontal"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/per_k4_g"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="30dp" />
             <TextView
                 android:textSize="12sp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/black"
                 android:text="待评价"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -182,6 +194,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
+            android:background="@drawable/per_bor_separate"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -199,16 +214,17 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageButton
-                android:layout_alignParentRight="true"
+            <ImageView
+                android:src="@mipmap/right"
                 android:padding="10dp"
-                android:background="@color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
         </RelativeLayout>
         <RelativeLayout
+            android:background="@drawable/per_bor_separate"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -225,16 +241,17 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageButton
-                android:layout_alignParentRight="true"
+            <ImageView
+                android:src="@mipmap/right"
                 android:padding="10dp"
-                android:background="@color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
         </RelativeLayout>
         <RelativeLayout
+            android:background="@drawable/per_bor_separate"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -251,16 +268,16 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageButton
-                android:layout_alignParentRight="true"
+            <ImageView
+                android:src="@mipmap/right"
                 android:padding="10dp"
-                android:background="@color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -277,12 +294,10 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageButton
-                android:layout_alignParentRight="true"
+            <ImageView
+                android:src="@mipmap/right"
                 android:padding="10dp"
-                android:background="@color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
         </RelativeLayout>
@@ -294,12 +309,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RelativeLayout
+            android:background="@drawable/per_bor_separate"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/per_iv_detail"
                 android:padding="8dp"
-                android:scaleType="fitCenter"
                 android:src="@mipmap/per_detail"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
@@ -310,22 +327,21 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageButton
-                android:layout_alignParentRight="true"
+            <ImageView
+                android:src="@mipmap/right"
                 android:padding="10dp"
-                android:background="@color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
         </RelativeLayout>
         <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/per_iv_emailus"
                 android:padding="8dp"
-                android:scaleType="fitCenter"
                 android:src="@mipmap/per_emailus"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
@@ -336,12 +352,10 @@
                 android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <ImageButton
-                android:layout_alignParentRight="true"
+            <ImageView
+                android:src="@mipmap/right"
                 android:padding="10dp"
-                android:background="@color/white"
-                android:scaleType="fitCenter"
-                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp" />
         </RelativeLayout>

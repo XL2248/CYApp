@@ -2,6 +2,7 @@ package com.example.fs.cy_demo;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +18,8 @@ public class ComFrag extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         com_view=inflater.inflate(R.layout.com_frag,container,false);
         context=com_view.getContext();
+
+
 
         return com_view;
     }

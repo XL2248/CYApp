@@ -24,6 +24,7 @@ public class GuideActivity extends Activity {
             @Override
             public void run() {
                 startActivity(intent);
+                finish();
             }
         };
         timer.schedule(task,1000*2);

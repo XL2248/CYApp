@@ -49,7 +49,7 @@ public class PerFrag extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.per_state:
-                Toast.makeText(context, "点击了", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "点击了", Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent(getActivity(),LoginAct.class);
                 startActivity(intent);
         }

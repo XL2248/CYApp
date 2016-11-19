@@ -14,6 +14,7 @@ import com.example.fs.cy_demo.struct.Myuser;
 
 import java.util.List;
 
+import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
@@ -28,6 +29,7 @@ public class LoginAct extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        Bmob.initialize(this, "e3261c1decdbfe7e562b5d0ba6884245");
         sp=this.getSharedPreferences("user_info", Context.MODE_PRIVATE);
         initview();
         bt_reg.setOnClickListener(new View.OnClickListener() {
