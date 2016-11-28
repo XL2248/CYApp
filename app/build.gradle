@@ -12,9 +12,20 @@ android {
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            ndk {
+                //选择要添加的对应CPU类型的.so库
+                abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86', 'x86_64', 'mips', 'mips64'
+            }
+            signingConfig signingConfigs.debug
+        }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
         }
     }
 }

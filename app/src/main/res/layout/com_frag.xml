@@ -75,6 +75,7 @@
         </LinearLayout>
     </RelativeLayout>
     <LinearLayout
+        android:layout_marginBottom="6dp"
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -139,14 +140,14 @@
                     <TextView
                         android:textSize="14sp"
                         android:textColor="@color/travel_color"
-                        android:text="求助帖"
+                        android:text="游记帖"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
                         android:layout_marginTop="4dp"
                         android:textSize="10sp"
                         android:textColor="@color/travel_color"
-                        android:text="寻求他人帮助\n解答众人困惑"
+                        android:text="书写美好回忆\n参考众人攻略"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
@@ -156,5 +157,21 @@
         </RelativeLayout>
 
     </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp">
+        <ImageView
+            android:id="@+id/com_tabline"
+            android:background="@drawable/tabline"
+            android:layout_width="100dp"
+            android:layout_height="3dp" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/com_vp_post"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>

@@ -69,6 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <EditText
+                    android:password="true"
                     android:textColorHint="@color/z_gary"
                     android:textSize="16sp"
                     android:layout_gravity="center_vertical"

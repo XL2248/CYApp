@@ -1,6 +1,6 @@
 package com.example.fs.cy_demo;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -43,7 +43,12 @@ public class PerFrag extends Fragment implements View.OnClickListener{
     }
 
     private void per_initview() {
+        sp=context.getSharedPreferences("user_info",Context.MODE_PRIVATE);
         state_tv= (TextView) per_view.findViewById(R.id.per_state);
+        if (sp.getBoolean("login",false)){
+            name=sp.getString("user_name",name);
+            state_tv.setText(name);
+        }
     }
 
     public void onClick(View v) {

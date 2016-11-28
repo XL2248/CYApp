@@ -11,4 +11,6 @@
     <color name="z_gary">#868686</color>
     <color name="help_color">#15984E</color>
     <color name="travel_color">#F38181</color>
+    <color name="darkgrey"> #C0C0C0</color>
+    <color name="transparent">#00000000</color>
 </resources>

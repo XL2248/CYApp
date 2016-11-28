@@ -1,9 +1,10 @@
 package com.example.fs.cy_demo;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 
 import cn.bmob.v3.Bmob;
 
-public class MainAct extends Activity implements View.OnClickListener{
+public class MainAct extends FragmentActivity implements View.OnClickListener{
     int black,blue;
     ImageButton ib_hom,ib_com,ib_per;
     TextView tv_hom,tv_com,tv_per;
@@ -43,7 +44,7 @@ public class MainAct extends Activity implements View.OnClickListener{
 
     private void setSelectFrag(int i) {
         //切换图片文字颜色，切换fragment
-        FragmentManager fm=getFragmentManager();
+        FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction transaction=fm.beginTransaction();
         hideFragment(transaction);
         switch (i){

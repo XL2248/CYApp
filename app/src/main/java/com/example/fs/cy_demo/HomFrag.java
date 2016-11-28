@@ -1,14 +1,11 @@
 package com.example.fs.cy_demo;
 
-import android.app.Fragment;
 import android.content.Context;
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,11 +14,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fs.cy_demo.adapter.BannerAdapter;
 import com.example.fs.cy_demo.customer.CollapsedTextView;
+
+import java.util.ArrayList;
+import java.util.List;
 public class HomFrag extends Fragment {
+    private ImageView gomap1;
+    private TextView gomap2;
     private ViewPager mViewPager;
     private List<ImageView> mlist;
     private LinearLayout mLinearLayout;
@@ -43,6 +46,25 @@ public class HomFrag extends Fragment {
         final Handler handler=new Handler();
         initView();
         Button button= (Button) view.findViewById(R.id.test_bt);
+        gomap1=(ImageView)view.findViewById(R.id.goto_map1);
+        gomap2=(TextView)view.findViewById(R.id.goto_map2);
+
+        gomap1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context,GotoMap.class);
+                startActivity(intent);
+            }
+        });
+        gomap2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context,GotoMap.class);
+                startActivity(intent);
+            }
+        });
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,6 +139,7 @@ public class HomFrag extends Fragment {
         m_text= (CollapsedTextView) view.findViewById(R.id.mtext);
         mViewPager = (ViewPager) view.findViewById(R.id.viewpager);
         mLinearLayout = (LinearLayout)view. findViewById(R.id.points);
+
     }
 
 

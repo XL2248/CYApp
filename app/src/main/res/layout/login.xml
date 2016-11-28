@@ -55,7 +55,7 @@
                     android:id="@+id/login_et_name"
                     android:textCursorDrawable="@color/z_gary"
                     android:layout_weight="1"
-                    android:hint="昵称/手机号"
+                    android:hint="昵称"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -71,6 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <EditText
+                    android:password="true"
                     android:textColorHint="@color/z_gary"
                     android:textSize="16sp"
                     android:layout_gravity="center_vertical"

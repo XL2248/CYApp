@@ -39,7 +39,6 @@ public class RegisterAct extends Activity {
         bt_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RegisterAct.this, "点击了注册", Toast.LENGTH_SHORT).show();
                 name=et_name.getText().toString();
                 password=et_password.getText().toString();
                 BmobQuery<Myuser> query=new BmobQuery<Myuser>();
@@ -80,6 +79,9 @@ public class RegisterAct extends Activity {
                                 Toast.makeText(RegisterAct.this, "该昵称已被占用", Toast.LENGTH_SHORT).show();
                                 et_name.setText("");
                             }
+                        }
+                        else {
+                            Toast.makeText(RegisterAct.this, "异常："+e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
