@@ -9,6 +9,7 @@
     <color name="gary">#EAEAEA</color>
     <color name="q_gary">#E6E6E6</color>
     <color name="z_gary">#868686</color>
+    <color name="act_background">#efefef</color>
     <color name="help_color">#15984E</color>
     <color name="travel_color">#F38181</color>
     <color name="darkgrey"> #C0C0C0</color>

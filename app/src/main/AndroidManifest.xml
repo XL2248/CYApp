@@ -45,6 +45,7 @@
         <activity android:name=".LoginAct"/>
         <activity android:name=".RegisterAct"/>
         <activity android:name=".GotoMap"/>
+        <activity android:name=".RouteGuideActivity"/>
 
     </application>
 
