@@ -45,6 +45,13 @@
         <activity android:name=".LoginAct"/>
         <activity android:name=".RegisterAct"/>
         <activity android:name=".GotoMap"/>
+        <activity android:name=".RouteGuideActivity"/>
+        <activity android:name=".InputTip"/>
+        <activity android:name=".route.BusRouteDetailActivity"/>
+        <activity android:name=".route.WalkRouteDetailActivity"/>
+        <activity android:name=".route.DriveRouteDetailActivity"/>
+
+
 
     </application>
 
